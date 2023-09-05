@@ -1,0 +1,22 @@
+#ifndef CAR_CONTROL_PANEL_H
+#define CAR_CONTROL_PANEL_H
+
+#include "defs.h"
+
+class Car_Control_Panel {
+    public:
+    //Constructor
+        Car_Control_Panel();
+        Car_Control_Panel(int);
+    //Functions
+        std::string FloorButtonPressed(){return "MoveCar";}
+        std::string HelpButtonPressed(){return "Help";}
+        std::string FireButtonPressed(){return "Fire";}
+        std::string OpenDoorPressed(){return "OpenDoor";}
+        std::string CloseDoorPressed(){return "Clo";}
+
+    private:
+        int elevatorID;
+        int destination_floor;
+};
+#endif
